@@ -31,7 +31,8 @@ header {
   grid-column: 2 / -1;
   display: grid;
   grid-template-columns: 1.5fr 1fr;
-  box-shadow: 10px 5px 5px black;
+  box-shadow: -2px 4px 8px #1e1b4b;
+  z-index: 1;
 }
 
 .search-form {
@@ -49,7 +50,9 @@ header {
 
 #user-search:hover,
 #user-search:focus {
+  outline: none;
   border: 4px solid #6366f1;
+  box-shadow: 0 0 5px #719ece;
 }
 
 .profile {
@@ -105,12 +108,13 @@ li button:active {
 .dashboard {
   background-color: #6366f1;
   grid-row: 1 / -1;
+  z-index: 2;
 }
 
 main {
-  background-color: #c7d2fe;
+  background-color: #e0e7ff;
 }
 
 aside {
-  background-color: #c7d2fe;
+  background-color: #e0e7ff;
 }
