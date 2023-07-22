@@ -115,7 +115,7 @@ li button:active {
   z-index: 2;
   display: grid;
   grid-auto-rows: min-content;
-  gap: 8px;
+  gap: 12px;
 }
 
 .dashboard img {
@@ -133,8 +133,44 @@ li button:active {
   color: white;
 }
 
+.dashboard-title {
+  height: 120px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.dashboard-title img {
+  width: 50px;
+}
+
 main {
   background-color: #e0e7ff;
+  padding: 24px;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 8px solid #1e1b4b;
+}
+
+.card-functions {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.card-functions img {
+  width: 30px;
+  height: auto;
 }
 
 aside {
