@@ -14,8 +14,13 @@ img {
   border-radius: 32px;
 }
 
-h1 {
+h1,
+h3 {
   margin: 0;
+}
+
+h4 {
+  margin: 0 0 8px 0;
 }
 
 .container {
@@ -150,7 +155,7 @@ main {
 
 .project-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
 }
 
@@ -159,6 +164,7 @@ main {
   border-radius: 8px;
   padding: 1rem;
   border-left: 8px solid #1e1b4b;
+  font-size: 1.2rem;
 }
 
 .card-functions {
@@ -175,4 +181,55 @@ main {
 
 aside {
   background-color: #e0e7ff;
+  padding: 1rem;
+}
+
+.announcement-card {
+  background-color: white;
+  border-radius: 8px;
+  display: grid;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.announcement-card .announcement-3 {
+  border-bottom: none;
+}
+
+.announcement-card > div {
+  border-bottom: 1px solid #1e1b4b;
+  font-size: 1rem;
+  padding: 0 0 2rem 0;
+}
+
+.trending-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.trending-card > div {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+}
+
+.trending-card div img {
+  grid-row: 1 / 3;
+}
+
+.user-address {
+  align-self: end;
+  font-weight: bold;
+}
+
+.user-title {
+  font-size: 12px;
+}
+
+.trending-card .attribution {
+  display: block;
 }
